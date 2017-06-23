@@ -70,7 +70,7 @@ RUN set -x \
 	&& rm bin/tomcat-native.tar.gz
 
 
-ADD smartdds.war /usr/local/tomcat/webapps
+ADD SmartDDSWebServer.war /usr/local/tomcat/webapps
 ADD libopencv_java320.so /usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/amd64
 RUN chmod 755 /usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/amd64/*.so
 
